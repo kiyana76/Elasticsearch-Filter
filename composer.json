@@ -1,0 +1,33 @@
+{
+    "name": "kiyana76/elasticsearch_filter",
+    "description": "This implement pagination and excel for result Elasticsearch",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kiyana76",
+            "email": "kiyana76@gmail.com"
+        }
+    ],
+    "require": {
+        "elasticsearch/elasticsearch": "^7.8",
+        "illuminate/pagination": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kiyana76\\ElasticSearchFilter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kiyana76\\ElasticSearchMapper\\ElasticSearchMapperServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
